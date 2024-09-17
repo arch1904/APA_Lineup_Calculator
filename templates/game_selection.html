@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Game Type</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="w-full max-w-md p-8 bg-white shadow-md rounded-md">
+        <h1 class="text-2xl font-bold mb-4">Select Game Type</h1>
+        <form action="{% url 'generate_lineups' %}" method="POST">
+            {% csrf_token %}
+            <div class="mb-4">
+                <label for="game_type" class="block text-sm font-medium text-gray-700">Choose Game Type</label>
+                <select id="game_type" name="game_type" class="mt-1 p-2 w-full border rounded-md" required>
+                    <option value="8ball">8-Ball</option>
+                    <option value="9ball">9-Ball</option>
+                </select>
+            </div>
+            <button type="submit" class="w-full py-2 px-4 mt-4 bg-blue-600 text-white rounded-md">Generate Lineups</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+
+# Django specific
+db.sqlite3
+/static/
+/media/
+
+# Environment variables
+.env
+
+# Django migrations
+**/migrations/*
+!**/migrations/__init__.py
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# VS Code and PyCharm directories
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Node modules (if using Node for frontend dependencies)
+node_modules/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# Test results
+*.log
+*.out
+*.err
+
+# Build and distribution directories
+build/
+dist/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# pip file lock
+Pipfile.lock

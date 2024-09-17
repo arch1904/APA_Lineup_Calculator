@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Lineups</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="w-full max-w-2xl p-8 bg-white shadow-md rounded-md">
+        <h1 class="text-2xl font-bold mb-4">Generated Lineups for {{ game_type }}</h1>
+        <div class="grid grid-cols-1 gap-4">
+            {% if lineups %}
+                {% for lineup in lineups %}
+                <div class="p-4 border rounded-md">
+                    <p class="font-semibold">Lineup:</p>
+                    <ul class="list-disc list-inside">
+                        {% for player, sl in lineup %}
+                        <li>{{ player }} (SL: {{ sl }})</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endfor %}
+            {% else %}
+                <p>No lineups available that meet the SL criteria.</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
