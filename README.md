@@ -93,10 +93,6 @@ This project is a Django web application designed to help organize teams for 8-b
 3. Select "8-ball" or "9-ball" to generate lineups.
 4. View the generated lineups, sorted by the highest individual SL within each lineup.
 
-## Screenshots
-
-*(Include screenshots of the different pages here if available.)*
-
 ## Known Issues and Limitations
 
 - The current implementation uses Django sessions to temporarily store player data. This may not be suitable for large-scale or multi-user applications without further modifications.
