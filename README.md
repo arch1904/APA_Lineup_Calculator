@@ -120,5 +120,5 @@ Contributions are welcome! Please open an issue or submit a pull request with im
 
 ## Contact
 
-For any inquiries or issues, please contact [Your Name] at [your.email@example.com].
+For any inquiries or issues, please contact Archit Gupta at architgupta941@gmail.com
 
